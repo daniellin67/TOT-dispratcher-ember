@@ -1,0 +1,205 @@
+<div class="modal" id="add-new-modal">
+    <div class="modal-dialog modal-xl mt-2">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container add-box">
+                    <div class="row">
+                        <div class="col-md-11 title">
+                            Thêm khách mới <button type=button class="btn" id="set-time-button" data-toggle="collapse"
+                                data-target="#set-time" aria-expanded="false">
+                                <div class="d-flex justify-content-center align-items-center"><i
+                                        class="fas fa-stopwatch"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-md-1 d-flex justify-content-center">
+                            <button type="button" class="close d-flex align-items-center close-button" data-dismiss="modal"
+                                aria-label="Close" id=close-add-button>
+                                <span aria-hidden="true" class="d-flex align-items-center"><i
+                                        class="fas fa-times"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <form class="form-horizontal" onsubmit={{action 'onsubmit'}}>
+
+                            <div class="collapse" id="set-time">
+                                <div class="gray-divider"></div>
+                                <div class="sub-title">
+                                    Cài đặt hẹn giờ
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Quận/Huyện</label>
+                                        <select class="custom-select border">
+                                            <option value="-1">Quận 1</option>
+                                            <option value="1">Quận 2</option>
+                                            <option value="2">Quận 3</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Lặp lại:</label>
+                                        <label class="container1 d-flex align-items-center">
+                                            <label>{{format-date this.today "day"}} hàng
+                                                tuần</label>
+                                            <input type="checkbox">
+                                            <span class="checkmark"
+                                                style="width: 20px; height: 20px; border-radius: 5px;"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Thời gian đón:</label>
+                                        <input class="form-control" type="time">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Điều trước (phút):</label>
+                                        <input class="form-control" type="text" placeholder="00">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class="col-md-6">
+                                        <label>Hiệu lực từ ngày:</label>
+                                        <div class="input-group date" data-date-format="dd-mm-yyyy">
+                                            <input class="form-control" type="text" placeholder="Ngày bắt đầu">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Đến ngày:</label>
+                                        <div class="input-group date" data-date-format="dd-mm-yyyy">
+                                            <input class="form-control" type="text" placeholder="Ngày kết thúc">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gray-divider"></div>
+                            <div class="sub-title">
+                                Thông tin khách
+                            </div>
+                            <input type=text class="form-control" placeholder="Nhập số điện thoại" name="phonenumber">
+                            <div class="recommend-tag mt-4 mb-4">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <span>
+                                            So 3 Phan Van Dat
+                                        </span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span>
+                                            So 227 Nguyemn Van Cu
+                                        </span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span>
+                                            So 3 Phan Van Dat
+                                        </span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span>
+                                            So 3 Phan Van Dat
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 pr-1">
+                                    <input type=text disabled=true class="form-control">
+                                </div>
+                                <div class="col-md-4 pl-0 pr-1">
+                                    <input type=text disabled=true class="form-control">
+                                </div>
+                                <div class="col-md-4 pl-0">
+                                    <input type=text disabled=true class="form-control" placeholder="Số lần nhắc">
+                                </div>
+                            </div>
+                            <input type=text class="form-control" placeholder="Nhập họ tên">
+                            <input type=text class="form-control" placeholder="Ghi chú">
+                            <div class="gray-divider"></div>
+                            <div class="sub-title">
+                                Yêu cầu xe
+                            </div>
+                            <input type=text class="form-control" placeholder="Yêu cầu xe">
+                            <div class="car-request">
+                                <div class="row main-car-request">
+                                    <div class="col-md-10 pr-1">
+                                        <select class="custom-select border">
+                                            <option value="-1">Xe bất kỳ</option>
+                                            <option value="1">Xe 4 chỗ</option>
+                                            <option value="2">Xe 7 chỗ</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2 pl-0 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle" onclick={{action 'add_click'}}></i>
+                                    </div>
+                                </div>
+                                <div class="row hidden" id="car-request-template">
+                                    <div class="col-md-10 pr-1">
+                                        <select class="custom-select border">
+                                            <option value="-1">Xe bất kỳ</option>
+                                            <option value="1">Xe 4 chỗ</option>
+                                            <option value="2">Xe 7 chỗ</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2 pl-0 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-minus-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gray-divider"></div>
+                            <div class="sub-title">
+                                Địa chỉ:
+                            </div>
+                            <input type=text class="form-control" placeholder="Nhập địa chỉ" name="address">
+                            <div class="gray-divider"></div>
+                            <div class="sub-title">
+                                Chọn line:
+                            </div>
+                            <div class="line-group">
+                                <div class="col-md-3">
+                                    <button type=button class="btn active" data-id="1">K1</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type=button class="btn" data-id="2">K2</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type=button class="btn" data-id="3">K3</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type=button class="btn" data-id="4">K4</button>
+                                </div>
+                                <select class="custom-select border">
+                                    <option value="1">K1</option>
+                                    <option value="2">K2</option>
+                                    <option value="3">K3</option>
+                                    <option value="4">K4</option>
+                                </select>
+                            </div>
+                            <div class="gray-divider"></div>
+                            <div class="d-flex justify-content-center">
+                                <button type=submit class="btn" id="lenh-dieu-xe-button">Lệnh điều xe (F5)</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-md-8 m-0">
+
+                        <input type=text placeholder="Nhập địa chỉ" class="form-control">
+
+
+                        <img src="assets/images/map.png" class="rounded" height="100%" width="100%">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

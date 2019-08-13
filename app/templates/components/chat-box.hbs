@@ -1,0 +1,103 @@
+<div class="chat-box container border border-ligh inactive">
+    <form action="#" method="POST">
+        <div class="row">
+            <div class="my-divider">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <div class="title">
+                    Chat
+                </div>
+            </div>
+            <div class=col-md-1>
+                <i id="close-chat-icon" class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gray-divider">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title">
+                    Người nhận:
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nhập người nhận">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary d-flex justify-content-center align-items-center"
+                            type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row reciever-button m-2">
+            <div class="col-md d-flex justify-content-center">
+                <button type=button class='btn' data-id="-1">
+                    All
+                </button>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <button type=button class='btn' data-id="1">
+                    k1
+                </button>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <button type=button class='btn' data-id="2">
+                    k2
+                </button>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <button type=button class='btn' data-id="3">
+                    k3
+                </button>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <button type=button class='btn' data-id="4">
+                    k4
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gray-divider">
+
+            </div>
+        </div>
+        <div class="row p-2 mb-2">
+            <div class="sub-title col-md-3">
+                Người nhận:
+            </div>
+            <div class="col-md-9">
+                <span class="reciever inactive" data-id="-1">tất cả <i class="fa fa-times-circle"
+                        aria-hidden="true"></i>
+                </span>
+                <span class="reciever inactive" data-id="1">K1 <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </span>
+                <span class="reciever inactive" data-id="2">K2 <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </span>
+                <span class="reciever inactive" data-id="3">K3 <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </span>
+                <span class="reciever inactive" data-id="4">K4 <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="sub-title col-md-3">
+                Tin nhắn:
+            </div>
+            <textarea name="message" rows="10" class="sub-title col-md-9" placeholder="Nhập tin nhắn"></textarea>
+        </div>
+        <div class="row p-2 d-flex justify-content-center">
+            <button type="submit" class="btn send-button">gửi</button>
+        </div>
+    </form>
+</div>

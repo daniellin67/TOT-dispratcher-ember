@@ -1,0 +1,433 @@
+.navbar {
+  padding: 0px;
+  border-radius: 0px;
+  height: 50px;
+}
+.navbar-brand {
+  height: 50px;
+  padding: 0px;
+  background-color: #05923e;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-dark .navbar-nav a.nav-link {
+  padding-top: 5px;
+  color: white;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
+.navbar ul li i {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.navbar-dark .navbar-nav a.nav-link:hover {
+  color: #05923e;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #05923e;
+}
+.chat .badge {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 10px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  background: #e63f40;
+  color: white;
+  font-size: 10px;
+}
+img[alt="Avatar"] {
+  height: 40px;
+  width: 40px;
+}
+.username {
+  font-weight: bold;
+  font-size: 12px;
+  color: #05923e;
+}
+.username ~ div {
+  font-size: 12px;
+  color: white;
+}
+.username ~ div strong {
+  color: #05923e;
+}
+.navbar .ml-auto li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-item .dropdown div[data-toggle="dropdown"] {
+  height: 50px;
+}
+.nav-item .dropdown div[data-toggle="dropdown"] i {
+  padding: 0px;
+  margin-right: 20px;
+  color: white;
+  background-color: #343a40;
+  border-style: none;
+  font-size: 20px;
+}
+.dropdown-menu {
+  padding-top: 0px;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+.navbar .dropdown-menu .divider {
+  margin-top: 0px;
+  height: 5px;
+  background-color: #97d3e6;
+}
+.navbar .dropdown-menu i {
+  padding-top: 0px;
+  margin-right: 10px;
+  color: #343a40;
+  font-size: 20px;
+}
+.dropdown-menu li:nth-child(2),
+.dropdown-menu li:nth-child(3) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.filter-button .btn,
+.filter .btn,
+.send-button, #send-anouncement-button {
+  background-color: #05923e;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: auto auto;
+  margin-left: 10px;
+}
+.filter label {
+  font-size: 12px;
+  color: #777777;
+}
+.filter input,
+.filter select,
+.filter span, .add-box span {
+  height: 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #777777;
+}
+.filter #time-show {
+  font-size: 40px;
+  color: #343a40;
+}
+.filter .weekday-show,
+.filter #date-show {
+  font-size: 20px;
+  color: #343a40;
+}
+
+.filter {
+  background-color: rgba(151, 212, 230, 0.3);
+}
+#filter {
+  height: 120px;
+}
+div.my-table {
+  overflow-y: scroll;
+}
+
+.my-divider,
+.gray-divider {
+  height: 5px;
+  background-color: #97d3e6;
+  width: 100%;
+}
+.my-divider {
+  background-color: #97d3e6;
+  margin-bottom: 10px;
+}
+.gray-divider {
+  background-color: rgb(240, 240, 240);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.chat-box .input-group input,
+.chat-box .input-group .input-group-append{
+  height: 30px;
+}
+.chat-box .input-group input{
+  width: 80%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.chat-box .input-group .input-group-append button {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #05923e;
+}
+#chat-history-modal input{
+  height: 30px;
+  border-radius: 30px 0px 0px 30px;
+}
+#chat-history-modal select{
+  border-radius: 30px;
+  height: 30px;
+}
+#chat-history-modal .input-group-addon{
+  border-radius: 0px 30px 30px 0px;
+}
+.input-group-addon{
+  height: 30px;
+}
+.reciever-button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  background-color: #777777;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.reciever-button button:hover{
+  color: white;
+  background-color: #05923e;
+}
+.chat-box span.reciever {
+  background-color: none;
+  padding: 5px;
+  color: #05923e;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #05923e;
+  border-width: 1.5px;
+  margin: 2px;
+}
+input.message {
+  height: 100px;
+}
+textarea {
+  border-radius: 10px;
+  font-weight: normal;
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #05923e;
+}
+.sub-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #777777;
+}
+div.chat-box {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  background-color: white;
+}
+.chat-box {
+  width: 500px;
+}
+.inactive{
+  display: none;
+}
+.active{
+  display: show;
+}
+.reciever-button button.chosen{
+  background-color: #05923e;
+  color: white;
+
+}
+
+.add-box input, .add-box select{
+  height: 30px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+.add-box button{
+  color: white;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+}
+.add-box .sub-title{
+  margin-bottom: 10px;
+}
+.line-group button{
+  background-color: #777777;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.line-group button:hover{
+  background-color: #05923e;
+  color: white;
+}
+#lenh-dieu-xe-button{
+  background-color: #05923e;
+  color: white;
+}
+#set-time-button{
+  background-color: #777777;
+  border-radius: 100%;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  padding: auto;
+}
+#set-time-button:hover{
+  background-color:#05923e;
+  color: white;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  color: #fff;
+    border-color:#05923e;
+    background-color: #05923e;
+}
+.custom-control-label::before{
+    display: block;
+    width: 15px;
+    height: 15px;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+}
+.modal-dialog {
+  width: 100%;
+  margin: auto;
+}
+div.modal-backdrop {
+  z-index: -1040;
+}
+div.recommend-tag{
+  display: none;
+}
+div.recommend-tag ul li{
+  margin-bottom: 10px;
+}
+div.recommend-tag span{
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #97d3e6;
+  color: white;
+}
+#close-add-button, #close-anouncement-button{
+  margin-top: -15px;
+  margin-right: -20px;
+}
+#close-add-button span,#close-anouncement-button span{
+  font-size:15px;
+  color: #343a40
+}
+
+
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+  background-color: #05923e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+label.container1{
+  margin-bottom: 0px;
+  height: 25px;
+}
+
+.my-table table tbody tr:hover{
+  background-color: rgba(151, 212, 230, 0.3);
+}
+.message-detail{
+  background-color:  rgba(151, 212, 230, 0.1);
+  border-radius: 5px;
+}
+.car-request div i{
+  font-size: 20px;
+  color: #e63f40
+}
+.car-request div.main-car-request i{
+  color:#05923e;
+}
+.hidden{
+  display: none;
+}
+.car-request div i:hover{
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #ff9393;
+}
+.car-request div.main-car-request i:hover{
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #46da81;
+}
+div.line-group button.active{
+  background: #05923e;
+}

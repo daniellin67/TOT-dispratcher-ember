@@ -1,0 +1,25 @@
+<div class="wrapper fadeInDown">
+  <div id="form-sign-in">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+    </div>
+
+    <!-- Login Form -->
+    <form onsubmit={{action 'authenticate'}}>
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+    <div id="error" style="color: red"></div>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+    {{#link-to "hienhanh" class="button"}}
+    Home
+    {{/link-to}}
+  </div>
+</div>

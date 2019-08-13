@@ -1,0 +1,42 @@
+<Header></Header>
+<Filter-collapse />
+<div class="container-fluid my-table border mb-2">
+    <table class="table table-striped table-fixed">
+        <thead>
+            <tr>
+                <th scope="col" class="col-md-1">VIP</th>
+                <th scope="col" class="col-md-1">Giờ</th>
+                <th scope="col" class="col-md-1">Điện thoại</th>
+                <th scope="col" class="col-md-2">Địa chỉ</th>
+                <th scope="col" class="col-md-1">Line</th>
+                <th scope="col" class="col-md-1">Số tài</th>
+                <th scope="col" class="col-md-1">Lệnh ĐĐV</th>
+                <th scope="col" class="col-md-1">Lệnh ĐTV</th>
+                <th scope="col" class="col-md-1">Loại xe</th>
+                <th scope="col" class="col-md-1">Kênh</th>
+                <th scope="col" class="col-md-1">Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this.model as |row|}}
+            <tr>
+                <td>{{row.vip}}</td>
+                <td>{{row.time}}</td>
+                <td>{{row.phone}}</td>
+                <td>{{row.address}}</td>
+                <td>{{row.line}}</td>
+                <td>{{row.num-driver}}</td>
+                <td>{{row.ddv}}</td>
+                <td>{{row.dtv}}</td>
+                <td>{{row.car-type}}</td>
+                <td>{{row.chanel}}</td>
+                <td>{{row.state}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<Chat-box />
+<Chat-history />
+<Anouncement-box />
+<Add-new-modal />

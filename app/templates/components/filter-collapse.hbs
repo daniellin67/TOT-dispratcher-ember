@@ -1,0 +1,64 @@
+<div id="filter" class="collapse">
+    <div class="filter container-fluid mt-0 b-0">
+        <div class="col-md-2 align-items-center">
+            <div id="time-show">
+                15:40:40
+            </div>
+            <div class="weekday-show">
+                {{format-date this.today "day"}}
+            </div>
+            <div id="date-show">
+                {{format-date this.today "date"}}
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4 p-1">
+                    <label>Thời gian:</label>
+                    <select class="custom-select border">
+                        <option value="1">Tất cả</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-md-8 p-1">
+                    <label>Trạng thái: </label>
+                    <select class="custom-select border">
+                        <option value="1">Tất cả</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 p-1">
+                    <label>Số điện thoại:</label>
+                    <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="col-md-3 p-1">
+                    <label>Địa chỉ:</label>
+                    <input type="text" class="form-control" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="col-md-3 p-1">
+                    <label>Ngày bắt đầu:</label>
+                    <div class="input-group date" data-date-format="dd-mm-yyyy">
+                        <input class="form-control" type="date" placeholder="Ngày bắt đầu">
+                    </div>
+
+                </div>
+                <div class="col-md-3 p-1">
+                    <label>Ngày kết thúc:</label>
+                    <div class="input-group date" data-date-format="dd-mm-yyyy">
+                        <input class="form-control" type="date" placeholder="Ngày kết thúc">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center align-items-center">
+            <button type="button" class="btn">áp dụng</button>
+        </div>
+    </div>
+</div>
+<script src="assets/js/script.js"></script>

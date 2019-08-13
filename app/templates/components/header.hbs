@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-0">
+    <!-- Mai Linh Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/mailinhlogo.jpg" alt="logo">
+    </a>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item text-center active">
+            <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i>
+                <br>Hiện hành</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link" href="#"><i class="far fa-clock"></i>
+                <br>Hẹn giờ</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link" href="#"><i class="fas fa-exchange-alt"></i>
+                <br>Chốt cơ</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link" href="#"> <i class="fas fa-map-marked-alt"></i>
+                <br>Bản đồ xe</a>
+        </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item text-center">
+            <a class="nav-link"><i data-toggle="modal" data-target="#anouncement-modal" class="fas fa-bullhorn"></i></a>
+        </li>
+        <li class="nav-item text-center">
+            <div class=chat>
+                <a class="nav-link" id="chat-icon"><i class="fas fa-comment-alt"></i></a>
+                <span class="badge">3</span>
+            </div>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+            <div>
+                <div class="username">{{authManager.user.username}}</div>
+                <div class="line">
+                    Line trực: <strong>K1</strong>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item text-center d-flex align-items-center">
+            <img src="assets/images/avatar.jpg" class="rounded-circle" alt="Avatar">
+        </li>
+        <li class="nav-item text-center d-flex align-items-center" style="padding-left: 0px; padding-right: 0px;">
+            <div class="dropdown">
+                <div class="d-flex align-items-center" data-toggle="dropdown">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="dropdown-menu pull-right">
+                    <li class="divider"></li>
+                    <li class="d-flex align-items-center" data-toggle="modal" data-target="#chat-history-modal">
+                        <i class="fas fa-history"></i>
+                        <div>
+                            Lịch sử chat
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <div>
+                            Đăng suất
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row filter-button m-2">
+        <div class="col-md-10">
+            <button type="button" class="btn">tất cả</button>
+            <button type="button" class="btn filter-button" data-toggle="collapse" data-target="#filter">bộ
+                lọc</button>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn" style="width: 50%" data-toggle="modal" data-target="#add-new-modal">thêm
+                mới (F2)</button>
+        </div>
+    </div>
+</div>
