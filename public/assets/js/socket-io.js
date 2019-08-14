@@ -17,7 +17,7 @@ $(document).ready(function(){
                 var td=$(`<td>${dt[i]}</td>`)
                 td.appendTo(tr);
             }
-            tr.appendTo('table tbody');
+            tr.insertBefore('table tbody tr:first-child');
             
     })
 })
