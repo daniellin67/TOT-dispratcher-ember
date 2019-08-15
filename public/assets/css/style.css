@@ -431,3 +431,59 @@ label.container1{
 div.line-group button.active{
   background: #05923e;
 }
+div#sign-in-container{
+  background-image: url('../images/login-fixed.png');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: bottom; 
+}
+div#sign-in-container .card{
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+div#sign-in-container .card .card-header{
+  background-image: linear-gradient(to bottom right,#05923e , #fcf407);
+  border-radius: 10px 10px 0px 0px;
+  border:0px;
+}
+div#sign-in-container .card .card-header strong{
+  color: white;
+  font-size: 20px
+}
+div#sign-in-container .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+div#sign-in-container input.form-control{
+  height: 30px;
+  border-radius: 30px;
+  width: 100%;
+}
+div#sign-in-container button[type='submit']{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom right,#05923e , #fcf407);
+  border:0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+div#sign-in-container button[type='submit'] i{
+  font-size: 30px;
+}
+div#sign-in-container .container-fluid div{
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #0000004b;
+}
+div#sign-in-container small#error{
+  color: #e63f40
+}
+div#sign-in-container label{
+  color: #777777;
+  font-size: 14px;
+}
