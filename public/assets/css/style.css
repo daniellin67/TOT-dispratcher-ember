@@ -410,6 +410,11 @@ label.container1{
   background-color:  rgba(151, 212, 230, 0.1);
   border-radius: 5px;
 }
+.car-request{
+  max-height: 110px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 .car-request div i{
   font-size: 20px;
   color: #e63f40
