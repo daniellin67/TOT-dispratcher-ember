@@ -61,5 +61,15 @@ $(window).ready(function () {
         buttons.removeClass('active');
         $(`div.line-group button[data-id="${id}"]`).addClass('active');
     })
+    $('#set-time-button').click(function(){
+        if($(this).hasClass('active')==true)
+        {
+            $(this).removeClass('active')
+            return;
+        }
+        else{
+            $(this).addClass('active')
+        }
+    })
     $('body').load(startTime());
 })

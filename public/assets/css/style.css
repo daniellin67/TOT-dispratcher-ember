@@ -8,9 +8,14 @@
   padding: 0px;
   background-color: #05923e;
 }
-
+nav.bg-dark{
+  background-image: linear-gradient(to right,#313131, #757575)
+}
 .navbar-brand img {
   height: 40px;
+}
+.nav-item div.dropdown div[data-toggle="dropdown"] i{
+  background-color: #31313100;
 }
 .navbar-dark .navbar-nav a.nav-link {
   padding-top: 5px;
@@ -53,14 +58,14 @@ img[alt="Avatar"] {
 .username {
   font-weight: bold;
   font-size: 12px;
-  color: #05923e;
+  color: white;
 }
 .username ~ div {
   font-size: 12px;
   color: white;
 }
 .username ~ div strong {
-  color: #05923e;
+  color: white;
 }
 .navbar .ml-auto li {
   padding-left: 10px;
@@ -101,7 +106,7 @@ img[alt="Avatar"] {
 .filter-button .btn,
 .filter .btn,
 .send-button, #send-anouncement-button {
-  background-color: #05923e;
+ background-image: linear-gradient(to bottom right,#05923e,#05923e , #fcf407);
   width: 80px;
   height: 30px;
   border-radius: 30px;
@@ -135,7 +140,7 @@ img[alt="Avatar"] {
 }
 
 .filter {
-  background-color: rgba(151, 212, 230, 0.3);
+  background-image: linear-gradient(to bottom, #05923d5e, #fcf40744)
 }
 #filter {
   height: 120px;
@@ -274,7 +279,7 @@ div.chat-box {
   color: white;
 }
 #lenh-dieu-xe-button{
-  background-color: #05923e;
+  background-image: linear-gradient(to bottom right,#05923e,#05923e , #fcf407);
   color: white;
 }
 #set-time-button{
@@ -434,7 +439,7 @@ label.container1{
   text-shadow: 0px 0px 5px #46da81;
 }
 div.line-group button.active{
-  background: #05923e;
+  background-color: #05923e;
 }
 div#sign-in-container{
   background-image: url('../images/login-fixed.png');
@@ -491,4 +496,58 @@ div#sign-in-container small#error{
 div#sign-in-container label{
   color: #777777;
   font-size: 14px;
+}
+#map{
+  height: 500px;
+}
+#set-time label{
+  font-size: 14px;
+  color: #777777;
+}
+#set-time .row .col-md-2{
+  padding-right: 0px;
+}
+input[type="date"] {
+  position: relative;
+  padding: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: 'FontAwesome';
+  content: '\f073';
+  /* This is the calendar icon in FontAwesome */
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: -3px;
+  right: 6px;
+  color: #999;
+}
+input[type=date]::-webkit-inner-spin-button{
+  position: absolute;
+  top: 3px;
+  right: 30px;
+}
+.input-group .form-control:last-child{
+  border-radius: 30px;
+}
+#set-time-button.active{
+  background-image: linear-gradient(to bottom right,#05923e,#05923e , #fcf407);
+  color: white
+}
+li div.dropdown ul li.d-flex:hover{
+  cursor: pointer;
+  background-color: #e4e4e4;
+}
+li div.dropdown ul li.d-flex i{
+ color: #05923e;
 }
